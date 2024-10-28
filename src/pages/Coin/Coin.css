@@ -1,0 +1,81 @@
+.spinner{
+    display: grid;
+    place-self: center;
+    min-height: 80vh;
+}
+.spin{
+    height: 65px;
+    width: 65px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-radius: 50%;
+    border-top-color: #4500c6;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.coin{
+    padding: 0px 20px;
+}
+.coin-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 100px auto;
+    margin-bottom: 50px;
+}
+.coin-name img{
+    max-width: 100px;
+}
+.coin-name p b{
+    font-size: 44px;
+    font-weight: 500;
+}
+.coin-chart{
+    max-width: 600px;
+    height: 250px;
+    margin: auto;
+}
+.coin-info{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    max-width: 600px;
+}
+.coin-info ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5f5d5f;
+}
+.coin-info ul li:last-child{
+    font-weight: 300;
+}
+.buy-sell{
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.buy-sell button{
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 30px;  
+}
+.buy{
+    background: green;
+    color: white;
+}
+.sell{
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,12 @@
+.footer{
+    text-align: center;
+    max-width: 80%;
+    border-top: 2px solid #989898;
+    font-size: 13px;
+    margin: auto;
+    padding: 15px 0px;
+}
+.footer span{
+    font-size: 15px;
+    color: bisque;
+}
