@@ -3,10 +3,14 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import arrow from '../../assets/arrow_icon.png'
 import { CoinContext } from '../../context/CoinContext'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const {setCurrency}=useContext(CoinContext);
+  const navigate =useNavigate();
+  const handleSignUpButton=()=>{
+    navigate("/signup")
+  }
   const currencyHandler=(event)=>{
     switch(event.target.value)
     {
@@ -50,7 +54,7 @@ const Navbar = () => {
                 <option value="eur">EUR</option>
                 <option value="inr">INR</option>
             </select>
-            <button>Sign up <img src={arrow} alt="" /></button>
+            <button onClick={handleSignUpButton}>Sign up <img src={arrow} alt="" /></button>
         </div>
       
     </div>

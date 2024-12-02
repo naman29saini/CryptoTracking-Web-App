@@ -6,7 +6,7 @@
     margin: auto;
     padding: 15px 0px;
 }
-.footer span{
+.footer span a{
     font-size: 15px;
     color: bisque;
 }

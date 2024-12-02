@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-      <p>CopyRight @ <span>Naman Saini</span> - All Rights Reserved</p>
+      <p>CopyRight @ <span><a href="https://naman29saini.vercel.app/" target='_blank'>Naman Saini</a></span> - All Rights Reserved</p>
     </div>
   )
 }
